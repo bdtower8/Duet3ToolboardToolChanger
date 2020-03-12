@@ -1,0 +1,3 @@
+; move to unlocked position, specific to assembly
+G1 C118 F4000
+M400
