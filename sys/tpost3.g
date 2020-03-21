@@ -7,7 +7,7 @@ G90
 M98 P"/macros/tool-detect/ensureToolHeadConnected"
 
 ;prime
-M98 P"/macros/priming/t1_prime"
+M98 P"/macros/priming/t3_prime"
 
 ;undo drop Bed
 ;G91

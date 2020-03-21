@@ -1,0 +1,5 @@
+;echo "test"
+;set global.tool0_dock_x = -25.0
+;set global.tool0_dock_y = 250;
+
+;echo global.tool0_dock_x

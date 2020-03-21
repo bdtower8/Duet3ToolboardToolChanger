@@ -1,0 +1,7 @@
+M400
+
+if sensors.inputs[0].value
+  if state.status = "Processing"
+    abort "Tool still connected"
+  else
+    abort "Tool still connected"

@@ -1,5 +1,5 @@
-; tfree0.g
-; called when tool 0 is freed
+; tfree2.g
+; called when tool 2 is freed
 ;
 
 ;Drop Bed
@@ -11,14 +11,14 @@ G90
 ;M564 S0
 
 ; align x, approach y safe limit
-G53 G1 X-25.1 Y180 F24000
+G53 G1 X199.9 Y180 F24000
 G53 G1 Y240 F10000
 
 ;Open Coupler
 M98 P"/macros/changer/unlock"
 
 ; final destination
-G53 G1 Y245.0 F2000
+G53 G1 Y245.8 F2000
 
 ; pause
 G4 P100
