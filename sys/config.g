@@ -42,12 +42,12 @@ M208 X-41:324 Y-14:281.5 Z0:300 C0:500                  ; Set axis maxima & mini
 M350 E16:16:16:16 C8 I1                                 ; Configure microstepping without interpolation
 M350 X16 Y16 Z16 I1                                     ; Configure microstepping with interpolation
 M92 X100 Y100 Z1600 C100 E398:398:398:398               ; Set steps per mm
-M566 X400 Y400 Z8 C2 E2:2:2:2                           ; Set maximum instantaneous speed changes (mm/min)
+M566 X1200 Y1200 Z50 C2 E300:300:300:300                ; Set maximum instantaneous speed changes (mm/min)
 M203 X20000 Y20000 Z1200 C5000 E5000:5000:5000:5000     ; Set maximum speeds (mm/min)
 M201 X900 Y900 Z400 C400 E5000:5000:5000:5000           ; Set accelerations (mm/s^2)
 M906 X1900 Y1900 Z1330 C500 E1400:1400:1400:1400 I30    ; Set motor currents (mA) and motor idle factor in per cent
 M84 S120                                                ; Set idle timeout
-M204 P900 T1600 R3300
+M204 P900 T2000 R5000
 
 
 ; Heaters
@@ -99,7 +99,7 @@ G10 P0 X23.65 Y19.8 Z-6.35	            ; Define tool 0 offset
 G10 P0 R0 S0                            ; Set initial tool 0 active and standby temperatures to 0C
 
 M563 P1 S"T1" D1 H2                     ; Define tool 1
-G10 P1 X22.75 Y19.6 Z-6.5	            ; Define tool 1 offset
+G10 P1 X22.75 Y19.6 Z-6.38	            ; Define tool 1 offset
 G10 P1 R0 S0                            ; Set initial tool 1 active and standby temperatures to 0C
 
 M563 P2 S"T2" D2 H3                   	; Define tool 2
@@ -107,8 +107,8 @@ G10 P2 X22.75 Y20.3 Z-14.8	            ; Define tool 2 offset
 G10 P2 R0 S0                            ; Set initial tool 2 active and standby temperatures to 0C
 
 M563 P3 S"T3" D3 H4                     ; Define tool 3
-G10 P3 X23.55 Y19.6 Z-14.63	            ; Define tool 3 offset
-G10 P3 R0 S0                            ; Set initial tool 2 active and standby temperatures to 0C
+G10 P3 X23.55 Y19.6 Z-14.53	            ; Define tool 3 offset
+G10 P3 R0 S0                            ; Set initial tool 3 active and standby temperatures to 0C
 
 
 ; Accessories
