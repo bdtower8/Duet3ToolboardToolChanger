@@ -22,6 +22,7 @@ G91
 G1 Y-60 E-0.3 F24000;
 G90
 
+; extra restart distance
 G92 E-0.850
 
 ;undo drop Bed
